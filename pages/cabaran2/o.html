@@ -1,0 +1,483 @@
+<!--
+  Generated template for the Cabaran2Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Cabaran 2: Cuba semak bil elektrik dan air</ion-title>
+  </ion-navbar>
+  <style>
+    p {
+      text-align: center;
+    }
+
+    .outline {
+      border: thin solid black;
+    }
+
+    .outline1 {
+      border: solid black;
+    }
+
+    .outline2 {
+      border: thin solid white;
+    }
+
+    .outline3 {
+      border: thin solid black;
+      width: "30px";
+      height: 30px;
+    }
+
+    .outline4 {
+      width: "5%";
+      height: 30px;
+    }
+
+    .hint {
+      color: tomato;
+    }
+  </style>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="outline" padding="30" align="center">
+    <p>*Sila rujuk Panduan Cabaran 2 untuk cara membaca bil elektrik*</p>
+    <div align="center">
+      <button [navPush]="" ion-button (click)="go()">Memuat Naik Bil Elektrik</button>
+    </div>
+  </div>
+
+  <br> Sila gunakan jalan kerja di bawah untuk membantu anda melengkapkan jadual ini.
+
+  <hr>
+  <b>Berapakah CO
+    <sub>2</sub> telah dibebaskan oleh keluarga saya melalui penggunaan elektrik? </b>
+  <br> Setiap penggunaan 1kWh bersamaan dengan pembebasan
+  <b>0.694 kg CO
+    <sub>2</sub>
+  </b>(GreenTech Malaysia, 2014)
+  <br>
+  <u>Contoh:</u>
+  <br> Keluarga saya telah gunakan 156 kWh sebulan
+  <br> 1 kWh membebaskan 0.694 kgCO
+  <sub>2</sub>
+  <br> Pembebasan CO
+  <sub>2</sub> =156 kWh x 0.694 kgCO
+  <sub>2</sub>/ kW
+  <b>=108.264 kgCO
+    <sub>2</sub>
+  </b>
+  <br>
+  <br>
+  <b>Tolong melengkapkan jadual tersebut:</b>
+  <table name="table1" class="outline" text-align="left" width="100%">
+    <tr class="outline" height="50">
+      <td class="outline" width="22%">Bulan</td>
+      <td class="outline" width="25%">(i)
+        <input type=text name="preMonth" placeholder=" Contoh: June">
+      </td>
+      <!-- <td class="outline" width="25%">(ii)<input type=text name="currMonth" placeholder=" Contoh: July"  ></td> -->
+    </tr>
+    <tr class="outline" height="50">
+      <td class="outline">Penggunaan Elektrik (kWh)</td>
+      <td class="outline">(A)
+        <input type=text name="preElektrik" placeholder=" Contoh: 156">
+      </td>
+      <!-- <td class="outline">(B)<input type=text name="currElektrik" placeholder=" Contoh: 136"  ></td> -->
+    </tr>
+    <tr class="outline" height="50">
+      <td class="outline">Jumlah (RM)</td>
+      <td class="outline">(D)
+        <input type=text name="preMoney" placeholder=" Contoh: 105">
+      </td>
+      <!-- <td class="outline">(E)<input type=text name="currMoney" placeholder=" Contoh: 90"  ></td> -->
+    </tr>
+
+  </table>
+  <br>
+  <br>
+  <!-- <button (click)="viewResult()" ion-button icon-start>
+          <ion-icon name="calculator" align="center"> <small><b>Mengira Penggunaan Elektrik</b></small></ion-icon>
+        </button><br> -->
+  <b>Penggunaan elektrik</b>
+
+  <ol type="i">
+    <li>
+      Perbezaan antara penggunaan elektrik pada bulan (i) dengan bulan (ii) ialah:
+    </li>
+    <table>
+      <tr>
+        <td class="outline" width="100" height="30">
+        </td>
+        <td align="center" width="20" height="30">
+          -
+        </td>
+        <td class="outline" width="100" height="30">
+        </td>
+        <td align="center" width="20" height="30">
+          =
+        </td>
+        <td class="outline" width="100" height="30">
+        </td>
+      </tr>
+    </table>
+    <br>
+    <li>Perbezaan antara jumlah penggunaan elektrik (RM) pada bulan (i) dengan bulan (ii) ialah:</li>
+    <table>
+      <tr>
+        <td class="outline" width="100" height="30">
+        </td>
+        <td align="center" width="20" height="30">
+          -
+        </td>
+        <td class="outline" width="100" height="30">
+        </td>
+        <td align="center" width="20" height="30">
+          =RM
+        </td>
+        <td class="outline" width="100" height="30">
+        </td>
+      </tr>
+    </table>
+  </ol>
+  <b>Pembebasan CO
+    <sub>2</sub> bulan (i)</b>
+  <br>
+  <table>
+    <tr>
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="180" height="30">
+        kWh X 0.694 kgCO
+        <sub>2</sub> /kWh =
+      </td>
+
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="40" height="30">
+        kgCO
+        <sub>2</sub>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <b>Pembebasan CO
+    <sub>2</sub> bulan (ii)</b>
+  <br>
+  <table>
+    <tr>
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="180" height="30">
+        kWh X 0.694 kgCO
+        <sub>2</sub> /kWh =
+      </td>
+
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="40" height="30">
+        kgCO
+        <sub>2</sub>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <b>Perbezaan antara pembebasan CO
+    <sub>2</sub> pada bulan (i) dengan bulan (ii) ialah:</b>
+  <br>
+  <table>
+    <tr>
+      <td width="100" height="30">Pembebasan CO
+        <sub>2</sub> bulan (ii)
+      </td>
+      <td align="center" width="20" height="30">
+
+      </td>
+      <td width="100" height="30">Pembebasan CO
+        <sub>2</sub> bulan (i)
+      </td>
+      <td align="center" width="20" height="30">
+
+      </td>
+      <td width="100" height="30">
+      </td>
+    </tr>
+    <tr>
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="20" height="30">
+        -
+      </td>
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="20" height="30">
+        =
+      </td>
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="40" height="30">
+        kgCO
+        <sub>2</sub>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+  <div class="outline" padding="30" align="center">
+    <p>*Sila rujuk Panduan Cabaran 2 untuk cara membaca bil air*</p>
+    <div>
+      <div align="center">
+        <button [navPush]="" ion-button (click)="go()">Memuat Naik Bil Air</button>
+      </div>
+    </div>
+  </div>
+
+
+  <br> Sila gunakan jalan kerja di bawah untuk membantu anda melengkapkan jadual ini.
+
+  <hr>
+  <b>Berapakah CO
+    <sub>2</sub> telah dibebaskan oleh keluarga saya melalui penggunaan air? </b>
+  <br> Setiap penggunaan 1m
+  <sup>3</sup> air bersamaan dengan pembebasan
+  <b>0.419 kg CO
+    <sub>2</sub>
+  </b>(GreenTech, 2010)
+  <br>
+  <u>Contoh:</u>
+  <br> Keluarga saya telah gunakan 5 m
+  <sup>3</sup> sebulan
+  <br> 1 m
+  <sup>3</sup> membebaskan 0.419 kgCO
+  <sub>2</sub>
+  <br> Pembebasan CO
+  <sub>2</sub> =5 m
+  <sup>3</sup> x 0.419 kgCO
+  <sub>2</sub>/ m
+  <sup>3</sup>
+  <b>=2.095 kgCO
+    <sub>2</sub>
+  </b>
+  <br>
+  <br>
+  <b>Tolong melengkapkan jadual tersebut:</b>
+  <table name="table2" class="outline" text-align="left" width="100%">
+    <tr class="outline" height="50">
+      <td class="outline" width="22%">Bulan</td>
+      <td class="outline" width="25%">(i)
+        <input type=text name="preMonthWater" placeholder=" Contoh: June">
+      </td>
+      <td class="outline" width="25%">(ii)
+        <input type=text name="currMonthWater" placeholder=" Contoh: July">
+      </td>
+    </tr>
+    <tr class="outline" height="50">
+      <td class="outline">Penggunaan Air (m
+        <sup>3</sup>)</td>
+      <td class="outline">(A)
+        <input type=text name="preWater" placeholder=" Contoh: 9">
+      </td>
+      <td class="outline">(B)
+        <input type=text name="currWater" placeholder=" Contoh: 8">
+      </td>
+    </tr>
+    <tr class="outline" height="50">
+      <td class="outline">Jumlah (RM)</td>
+      <td class="outline">(D)
+        <input type=text name="preMoneyWater" placeholder=" Contoh: 80">
+      </td>
+      <td class="outline">(E)
+        <input type=text name="currMoneyWater" placeholder=" Contoh: 65">
+      </td>
+    </tr>
+
+  </table>
+
+  <br>
+  <!-- <button (click)="viewWaterResult()" ion-button icon-start>
+          <ion-icon name="calculator" align="center"> <small><b>Mengira Penggunaan Air</b></small></ion-icon>
+        </button><br> -->
+  <b>Penggunaan air</b>
+
+  <ol type="i">
+    <li>
+      Perbezaan antara penggunaan air pada bulan (i) dengan bulan (ii) ialah:
+    </li>
+    <table>
+      <tr>
+        <td class="outline" width="100" height="30">
+        </td>
+        <td align="center" width="20" height="30">
+          -
+        </td>
+        <td class="outline" width="100" height="30">
+        </td>
+        <td align="center" width="20" height="30">
+          =
+        </td>
+        <td class="outline" width="100" height="30">
+        </td>
+        <td align="center" width="20" height="30">
+          m
+          <sup>3</sup>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <li>Perbezaan antara jumlah penggunaan air (RM) pada bulan (i) dengan bulan (ii) ialah:</li>
+    <table>
+      <tr>
+        <td class="outline" width="100" height="30">
+        </td>
+        <td align="center" width="20" height="30">
+          -
+        </td>
+        <td class="outline" width="100" height="30">
+        </td>
+        <td align="center" width="20" height="30">
+          =RM
+        </td>
+        <td class="outline" width="100" height="30">
+        </td>
+      </tr>
+    </table>
+  </ol>
+  <b>Pembebasan CO
+    <sub>2</sub> bulan (i)</b>
+  <br>
+  <table>
+    <tr>
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="180" height="30">
+        kWh X 0.419 kgCO
+        <sub>2</sub> /m
+        <sup>3</sup> =
+      </td>
+
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="40" height="30">
+        kgCO
+        <sub>2</sub>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <b>Pembebasan CO
+    <sub>2</sub> bulan (ii)</b>
+  <br>
+  <table>
+    <tr>
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="180" height="30">
+        m
+        <sup>3</sup> X 0.419 kgCO
+        <sub>2</sub> /m
+        <sup>3</sup> =
+      </td>
+
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="40" height="30">
+        kgCO
+        <sub>2</sub>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <b>Perbezaan antara pembebasan CO
+    <sub>2</sub> pada bulan (i) dengan bulan (ii) ialah:</b>
+  <br>
+  <table>
+    <tr>
+      <td width="100" height="30">Pembebasan CO
+        <sub>2</sub> bulan (ii)
+      </td>
+      <td align="center" width="20" height="30">
+
+      </td>
+      <td width="100" height="30">Pembebasan CO
+        <sub>2</sub> bulan (i)
+      </td>
+      <td align="center" width="20" height="30">
+
+      </td>
+      <td width="100" height="30">
+      </td>
+    </tr>
+    <tr>
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="20" height="30">
+        -
+      </td>
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="20" height="30">
+        =
+      </td>
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="40" height="30">
+        kgCO
+        <sub>2</sub>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <b class="hint">**Mengurangkan masa 1 minit masa mandi (siram) sehari boleh mengurangkan pembebasan 29.1 kgCO
+    <sub>2</sub>**</b>
+  <br>
+  <br>
+  <b>Bahagian Kemahiran Berfikir Kritis</b>
+  <ol type="bullet">
+    <li>
+      <b> Anda telah belajar membaca penggunaan elektrik dan air serta cara mengira pembebasan CO
+        <sub>2</sub>di rumah anda. Apakah kesimpulan yang boleh anda buat tentang
+        <u>penggunaan elektrik dan air</u> di rumah anda?</b>
+    </li>
+    <ion-toolbar class="text-input">
+      <ion-item class="outline">
+
+        <ion-textarea autosize rows="4" placeholder="Jawapan anda..." autocomplete="on" autocorrect="on" [(ngModel)]="message">
+        </ion-textarea>
+
+      </ion-item>
+    </ion-toolbar>
+    <br>
+
+    <li>
+      <b> Daripada Cabaran 1 dan Cabaran 2 di atas, anda telah semak bilangan alat elektrik di rumah anda dan juga belakar membaca
+        bil elektri dan air di rumah anda. Anda juga dapat tahu berapa elektrik dan air yang telah keluarga anda gunakan,
+        berapa yang dibayar untuk penggunaan tersebut serta pembebasan CO
+        <sub>2</sub> sebulan oleh keluarga anda. Apakah cadangan anda untuk mengurangkan pembebasan CO
+        <sub>2</sub> di rumah?</b>
+    </li>
+    <ion-toolbar class="text-input">
+      <ion-item class="outline">
+
+        <ion-textarea autosize rows="4" placeholder="Jawapan anda..." autocomplete="on" autocorrect="on" [(ngModel)]="message">
+        </ion-textarea>
+
+      </ion-item>
+    </ion-toolbar>
+
+  </ol>
+  <ion-row>
+    <ion-col width-50 style="text-align: center;    border: thin solid white;">
+      <button ion-button [color]="red" [outline]="isOutline" [round]="true" (click)="ab()">
+        Submit </button>
+    </ion-col>
+  </ion-row>

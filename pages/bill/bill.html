@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Bill Page</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <!-- <ion-input type="file" (change)="uploadFile($event)"></ion-input>
+  <div>{{ uploadPercent | async }}</div>
+  <a [href]="downloadURL | async">{{ downloadURL | async }}</a>
+  <input type="text" [(ngModel)]="fileId"> -->
+
+
+  <ion-label>Upload</ion-label>
+  <ion-item>
+    <ion-label>Bill</ion-label>
+    <ion-select [(ngModel)]="billNo">
+      <ion-option value="bill1">Bill one</ion-option>
+      <ion-option value="bill2">Bill two</ion-option>
+      <ion-option value="bill3">Bill three</ion-option>
+    </ion-select>
+  </ion-item>
+  <!-- the camera module -->
+  <ion-row *ngIf="billNo">
+    <ion-col text-center>
+      <button (click)="getPicture(1)" color="light-blue" ion-button round>  
+        <ion-icon name="camera"></ion-icon>
+      </button>
+
+    </ion-col>
+  </ion-row>
+
+    <img [src]="uploadUrl | async" *ngIf="uploadUrl|async" />
+ 
+
+
+
+  <ion-label>Download</ion-label>
+  <ion-item>
+    <ion-label>Bill</ion-label>
+    <ion-select [(ngModel)]="billDown">
+      <ion-option value="bill1">Bill one</ion-option>
+      <ion-option value="bill2">Bill two</ion-option>
+      <ion-option value="bill3">Bill three</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-row *ngIf="billDown">
+    <ion-col text-center>
+      <!-- <button (click)="downloadFile(billDown)" color="light-blue" ion-button round>
+          <ion-icon name=""> {{billDown}}</ion-icon> 
+      </button> -->
+      <button (click)="get()" color="light-blue" ion-button round>
+          <ion-icon name="cloud-download"></ion-icon>
+        </button>
+    </ion-col>
+
+  </ion-row>
+  <ion-row *ngIf="billDown">
+      <img src=" assets/imgs/bill.jpg" >
+  </ion-row>
+
+
+</ion-content>

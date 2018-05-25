@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Access Materials</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-content padding>
+    <ion-row>
+      <ion-col width-50 style="text-align: center">
+        <button ion-button [color]="red" [outline]="isOutline" [round]="true" (click)="goQuestion()">
+          LCS Questionnaire </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50 style="text-align: center">
+
+        <button ion-button [color]="green" [outline]="isOutline" [round]="true" (click)="goVideo()">
+          Videos </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50 style="text-align: center">
+        <button ion-button [color]="blue" [outline]="isOutline" [round]="true" (click)="goTraining()">
+          Training Material </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50 style="text-align: center">
+        <button ion-button [color]="yellow" [outline]="isOutline" [round]="true" (click)="goWorkbook()">
+          Workbook </button>
+      </ion-col>
+    </ion-row>
+  </ion-content>
+  <!--   
+  <ion-toolbar>
+    <ion-segment>
+      <ion-segment-button value="camera" (click)="pushPage()">
+        Testing
+      </ion-segment-button>
+      <ion-segment-button value="bookmark">
+        <ion-icon name="bookmark"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+  <ul>
+    <li *ngFor="let item of items | async">
+      {{ item |json }}
+    </li>
+  </ul>
+  <ion-item small>Add item</ion-item>
+  <ion-row>
+    <ion-input placeholder="Text Input" id="input" [(ngModel)]="idoc.name"></ion-input>
+    <button for="input" ion-fab mini (click)="addItem(idoc)">+</button>
+  </ion-row>
+
+
+  <ion-item small>Item doc</ion-item>
+  <div>
+    <p *ngIf="itemdoc">{{ (itemdoc | async)|json }}</p>
+    <ion-row>
+      <ion-input type="text" [(ngModel)]="billNo" placeholder="Bill no"> </ion-input>
+      <ion-input type="text" [(ngModel)]="fileName" placeholder="Filename"> </ion-input>
+      <button ion-fab mini (click)="updateBill(billNo,fileName)">Up</button>
+    </ion-row>
+    <ion-row>
+      <ion-input placeholder="Accout id" [(ngModel)]="docRef"></ion-input>
+      <button ion-button small (click)="getDoc(docRef)">GetDoc</button>
+    </ion-row>
+  </div>
+  <button ion-button (click)="getSes()">getses</button>
+
+
+
+  <button ion-button full (click)="openModal()">Open Login</button> -->
+</ion-content>

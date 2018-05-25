@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Workbook</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+  <ion-content padding>
+    <ion-row>
+      <ion-col width-50 style="text-align: center">
+        <button ion-button [color]="red" [outline]="isOutline" [round]="true" (click)="goC1()">
+          Cabaran 1 </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50 style="text-align: center">
+
+        <button ion-button [color]="green" [outline]="isOutline" [round]="true" (click)="goC2()">
+          Cabaran 2 </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50 style="text-align: center">
+        <button ion-button [color]="blue" [outline]="isOutline" [round]="true" (click)="goC3()">
+          Cabaran 3 </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50 style="text-align: center">
+        <button ion-button [color]="yellow" [outline]="isOutline" [round]="true" (click)="goC4()">
+          Cabaran 4 </button>
+      </ion-col>
+    </ion-row>
+  </ion-content>
+ 

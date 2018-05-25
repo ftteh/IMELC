@@ -1,0 +1,413 @@
+<!--
+  Generated template for the Cabaran2Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Challenge 2</ion-title>
+  </ion-navbar>
+  <style>
+  p{
+    text-align:center;
+  }
+
+  .outline{
+    border: thin solid black ;
+  }
+  .outline1{
+    border:solid black ;
+      }
+  .outline2{
+    border:thin solid white ;
+      }
+ .outline3{
+    border:thin solid black ;
+    width:"30px";
+    height:30px;
+      }
+ .outline4{
+    width:"5%";
+    height:30px;
+      }
+ .hint{
+      color:tomato;
+    }
+     
+  </style>
+  
+</ion-header>
+
+
+<ion-content padding>
+  <h1>Check The Electricity And Water Bills</h1>
+  <div class="outline" padding="30" align="center">
+      <p >*Please refer to the guideline for the way to read electricity bill*</p>
+      <div align="center">
+      <button [navPush]="" ion-button (click)="go()">Upload Electricity Bill</button>
+      </div>
+      </div>
+
+    <br>
+      Please use the formula below to help you in the calculation of carbon emission.
+    
+      <hr>
+      <br>
+      A usage of 1kWh equals to an emission of <b> 0.694 kg CO<sub>2</sub></b> (GreenTech Malaysia, 2014)
+      <br><br>
+      <u>For an example:</u><br>
+      A usage of 156 kWh per month<br>
+      1 kWh release 0.694 kgCO<sub>2</sub><br>
+      CO<sub>2</sub> emission= 156 kWh x 0.694 kgCO<sub>2</sub>/ kW
+      <b>=108.264 kgCO<sub>2</sub></b>
+    <br>
+    <br>
+    <b>Please complete the table below:</b>
+    <table name="table1" class="outline" text-align="left" width="100%">
+        <tr class="outline" height="50">
+          <td class="outline" width="22%">Month</td>
+          <td class="outline" width="25%">(i)<input type=text name="preMonth" placeholder=" Example: June"></td>
+          <!-- <td class="outline" width="25%">(ii)<input type=text name="currMonth" placeholder=" Example: July"  ></td> -->
+        </tr>
+        <tr class="outline" height="50">
+            <td class="outline">Electrical Usage (kWh)</td>
+            <td class="outline">(A)<input type=text name="preElektrik" placeholder=" Example: 156"></td>
+            <!-- <td class="outline">(B)<input type=text name="currElektrik" placeholder=" Example: 136"  ></td> -->
+          </tr>
+          <tr class="outline" height="50">
+              <td class="outline">Total (RM)</td>
+              <td class="outline">(D)<input type=text name="preMoney" placeholder=" Example: 105"  ></td>
+              <!-- <td class="outline">(E)<input type=text name="currMoney" placeholder=" Example: 90"  ></td> -->
+            </tr>
+            
+      </table>
+      <br>
+      <br>
+      <!-- <button (click)="viewResult()" ion-button icon-start>
+          <ion-icon name="calculator" align="center"> <small><b>Calculate Electrical Usage</b></small></ion-icon>
+        </button><br> -->
+<b>Electrical Usage</b>
+
+<ol type="i">
+<li>
+  Difference of electrical usage between month (i) and month (ii):
+</li>
+<table>
+  <tr>
+  <td class="outline" width="100" height="30">
+  </td>
+  <td  align="center" width="20" height="30">
+   -
+  </td>
+  <td class="outline" width="100" height="30" >
+    </td>
+    <td  align="center" width="20" height="30">
+        =
+       </td>
+    <td class="outline" width="100" height="30" >
+        </td>
+  </tr>
+</table>
+<br>
+<li>Difference of total electrical usage (RM) between month (i) and month (ii):</li>
+<table >
+    <tr>
+    <td class="outline" width="100" height="30">
+    </td>
+    <td  align="center" width="20" height="30">
+     -
+    </td>
+    <td class="outline" width="100" height="30" >
+      </td>
+      <td  align="center" width="20" height="30">
+          =RM
+         </td>
+      <td class="outline" width="100" height="30" >
+          </td>
+    </tr>
+  </table>
+</ol>
+<b>CO<sub>2</sub> emission month (i)</b><br>
+<table >
+    <tr>
+    <td class="outline" width="100" height="30">
+    </td>
+    <td align="center" width="180" height="30">
+     kWh X 0.694 kgCO<sub>2</sub> /kWh =
+    </td>
+    
+      <td class="outline" width="100" height="30" >
+          </td> 
+          <td  align="center" width="40" height="30">
+              kgCO<sub>2</sub>
+             </td>
+    </tr>
+  </table>
+  <br>
+
+  <b>CO<sub>2</sub> emission month (ii)</b><br>
+  <table >
+      <tr>
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="180" height="30">
+       kWh X 0.694 kgCO<sub>2</sub> /kWh =
+      </td>
+      
+        <td class="outline" width="100" height="30" >
+            </td> 
+            <td  align="center" width="40" height="30">
+                kgCO<sub>2</sub>
+               </td>
+      </tr>
+    </table>
+    <br>
+    <b>Difference of CO<sub>2</sub> emission between month (i) and month (ii):</b><br>
+    <table>
+        <tr>
+        <td  width="100" height="30">CO<sub>2</sub> emission month (ii)
+        </td>
+        <td  align="center" width="20" height="30">
+         
+        </td>
+        <td  width="100" height="30" > CO<sub>2</sub> emission month (i)
+          </td>
+          <td  align="center" width="20" height="30">
+              
+             </td>
+          <td  width="100" height="30" >
+              </td>
+        </tr>
+        <tr>
+            <td class="outline" width="100" height="30">
+            </td>
+            <td  align="center" width="20" height="30">
+             -
+            </td>
+            <td class="outline" width="100" height="30" >
+              </td>
+              <td  align="center" width="20" height="30">
+                  =
+                 </td>
+              <td class="outline" width="100" height="30" >
+                  </td>
+                  <td  align="center" width="40" height="30">
+                      kgCO<sub>2</sub>
+                     </td>
+            </tr>
+      </table>
+      <br>
+<br> 
+<br>
+<div class="outline" padding="30" align="center">
+    <p >*Please refer to the guideline for the way to read water bill*</p>
+<div>
+    <div align="center">
+      <button [navPush]="" ion-button (click)="go()">Upload Water Usage Bill</button>
+</div>
+</div>
+</div>
+
+
+  <br>
+  Please use the formula below to help you in the calculation of carbon emission.
+    
+      <hr>
+      <br>
+      A usage of 1m<sup>3</sup> water equals to an emission of<b>0.419 kg CO<sub>2</sub></b>(GreenTech, 2010)
+      <br>
+      <u>For an example:</u><br>
+      A usage of 5 m<sup>3</sup> per month<br>
+      1 m<sup>3</sup> release 0.419 kgCO<sub>2</sub><br>
+      CO<sub>2</sub> emission =5 m<sup>3</sup> x 0.419 kgCO<sub>2</sub>/ m<sup>3</sup>
+      <b>=2.095 kgCO<sub>2</sub></b>
+    <br>
+    <br>
+    <b>Please complete the table below:</b>
+    <table name="table2" class="outline" text-align="left" width="100%">
+        <tr class="outline" height="50">
+          <td class="outline" width="22%">Month</td>
+          <td class="outline" width="25%">(i)<input type=text name="preMonthWater" placeholder=" Example: June"></td>
+          <td class="outline" width="25%">(ii)<input type=text name="currMonthWater" placeholder=" EXample: July"  ></td>
+        </tr>
+        <tr class="outline" height="50">
+            <td class="outline">Water Usage (m<sup>3</sup>)</td>
+            <td class="outline">(A)<input type=text name="preWater" placeholder=" Example: 9"></td>
+            <td class="outline">(B)<input type=text name="currWater" placeholder=" Example: 8"  ></td>
+          </tr>
+          <tr class="outline" height="50">
+              <td class="outline">Total (RM)</td>
+              <td class="outline">(D)<input type=text name="preMoneyWater" placeholder=" Example: 80"  ></td>
+              <td class="outline">(E)<input type=text name="currMoneyWater" placeholder=" Example: 65"  ></td>
+            </tr>
+            
+      </table>
+       
+      <br>
+      <!-- <button (click)="viewWaterResult()" ion-button icon-start>
+          <ion-icon name="calculator" align="center"> <small><b>Calculate Water Usage</b></small></ion-icon>
+        </button><br> -->
+<b>Water Usage</b>
+
+<ol type="i">
+<li>
+  Difference of water usage between month (i) and month (ii):
+</li>
+<table>
+  <tr>
+  <td class="outline" width="100" height="30">
+  </td>
+  <td  align="center" width="20" height="30">
+   -
+  </td>
+  <td class="outline" width="100" height="30" >
+    </td>
+    <td  align="center" width="20" height="30">
+        =
+       </td>
+    <td class="outline" width="100" height="30" >
+        </td>
+        <td  align="center" width="20" height="30">
+            m<sup>3</sup>
+           </td>
+  </tr>
+</table>
+<br>
+<li>Difference of total water usage (RM) between month (i) and month (ii):</li>
+<table >
+    <tr>
+    <td class="outline" width="100" height="30">
+    </td>
+    <td  align="center" width="20" height="30">
+     -
+    </td>
+    <td class="outline" width="100" height="30" >
+      </td>
+      <td  align="center" width="20" height="30">
+          =RM
+         </td>
+      <td class="outline" width="100" height="30" >
+          </td>
+    </tr>
+  </table>
+</ol>
+<b>CO<sub>2</sub> emission month (i)</b><br>
+<table >
+    <tr>
+    <td class="outline" width="100" height="30">
+    </td>
+    <td align="center" width="180" height="30">
+     kWh X 0.419 kgCO<sub>2</sub> /m<sup>3</sup> =
+    </td>
+    
+      <td class="outline" width="100" height="30" >
+          </td> 
+          <td  align="center" width="40" height="30">
+              kgCO<sub>2</sub>
+             </td>
+    </tr>
+  </table>
+  <br>
+
+  <b>CO<sub>2</sub> emission month (ii)</b><br>
+  <table >
+      <tr>
+      <td class="outline" width="100" height="30">
+      </td>
+      <td align="center" width="180" height="30">
+       m<sup>3</sup> X 0.419 kgCO<sub>2</sub> /m<sup>3</sup> =
+      </td>
+      
+        <td class="outline" width="100" height="30" >
+            </td> 
+            <td  align="center" width="40" height="30">
+                kgCO<sub>2</sub>
+               </td>
+      </tr>
+    </table>
+    <br>
+    <b>Difference of CO<sub>2</sub>emission between month (i) and month (ii):</b><br>
+    <table>
+        <tr>
+        <td  width="100" height="30">CO<sub>2</sub> emission month (ii)
+        </td>
+        <td  align="center" width="20" height="30">
+         
+        </td>
+        <td  width="100" height="30" >CO<sub>2</sub> emission month (i)
+          </td>
+          <td  align="center" width="20" height="30">
+              
+             </td>
+          <td  width="100" height="30" >
+              </td>
+        </tr>
+        <tr>
+            <td class="outline" width="100" height="30">
+            </td>
+            <td  align="center" width="20" height="30">
+             -
+            </td>
+            <td class="outline" width="100" height="30" >
+              </td>
+              <td  align="center" width="20" height="30">
+                  =
+                 </td>
+              <td class="outline" width="100" height="30" >
+                  </td>
+                  <td  align="center" width="40" height="30">
+                      kgCO<sub>2</sub>
+                     </td>
+            </tr>
+      </table>
+<br>
+<b class="hint">**Take Note! Reduce 1 minute of bathing time per day can reduce an emission of 29.1 kgCO<sub>2</sub>**</b>
+<br>
+<br>
+<b>Critical Thinking Section</b>
+<ol type="bullet">
+<li>
+ <b> You had learned the way to read the electrical and water bill including the method to calculate carbon emission (CO<sub>2</sub>) from your house. What conclusion can u make based on the <u>usage of electrical and water</u> in your house?</b>
+</li>
+<ion-toolbar class="text-input">
+    <ion-item class="outline">
+        
+            <ion-textarea autosize
+              rows="4"
+              placeholder="Your answer..."
+              autocomplete="on"
+              autocorrect="on"
+              [(ngModel)]="message"
+              >
+            </ion-textarea>
+           
+    </ion-item>
+  </ion-toolbar>
+  <br>
+
+  <li>
+      <b> From Challenge 1 and Challenge 2, you had checked the amount of electrical item in your house and learned how to read the electrical and water bill in your house. You also know about the amount of electrical and water usage your family had used, the amount to pay for that usage and also the emission of CO<sub>2</sub> from your family per month. What is your suggestion to reduce the CO<sub>2</sub> emission in your house?</b>
+     </li>
+     <ion-toolbar class="text-input">
+        <ion-item class="outline">
+            
+                <ion-textarea autosize
+                  rows="4"
+                  placeholder="Your answer..."
+                  autocomplete="on"
+                  autocorrect="on"
+                  [(ngModel)]="message"
+                  >
+                </ion-textarea>
+               
+        </ion-item>
+      </ion-toolbar>
+      <ion-col width-50 style="text-align: center;    border: thin solid white;">
+        <button ion-button [color]="red" [outline]="isOutline" [round]="true" (click)="ab()">
+          Submit </button>
+      </ion-col>
+</ol>
+    
+

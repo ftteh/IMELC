@@ -1,0 +1,153 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Challenge 1
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+<style>
+  .col {
+    border: thin solid black;
+    text-align: center;
+  }
+
+  .outline {
+    border: thin solid black;
+  }
+
+  li {
+    color: royalblue;
+  }
+
+  .fontTomato {
+    color: tomato;
+  }
+
+  ion-footer {
+    ion-toolbar.toolbar.toolbar-ios {
+      &.toolbar:last-child {
+        padding-bottom: 0px;
+        height: auto;
+      }
+    }
+    ion-item.item-textarea {
+      background-color: transparent;
+    }
+    .text-input {
+      height: auto;
+      div.input-wrapper {
+        background-color: #fff;
+        border-radius: 20px;
+        textarea.text-input {
+          margin-left: 8px;
+
+        }
+      }
+    }
+  }
+</style>
+
+<ion-content padding>
+  <h1>Check Electrical Goods At Home</h1>
+  <br>
+  <p class="fontTomato">Let's check what are the items which use electricity at home</p>
+
+  <ol type="1">
+    <li>Let's list the items/ appliances in your house which uses electricity. Count and enter the total unit(s) of that item
+      in your house.</li>
+    <br>
+
+    <ion-grid class="items" fixed>
+
+      <ion-row>
+        <ion-col>
+          <b>Items/ Appliances</b>
+        </ion-col>
+        <ion-col>
+          <b>Unit(s)</b>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input rows.item="item" type="text" placeholder="Items/ Appliances"></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input rows.item="unit" type="number" placeholder="Unit"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input rows.item="item" type="text" placeholder="Items/ Appliances"></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input rows.item="unit" type="number" placeholder="Unit"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input rows.item="item" type="text" placeholder="Items/ Appliances"></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input rows.item="unit" type="number" placeholder="Unit"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input rows.item="item" type="text" placeholder="Items/ Appliances"></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input rows.item="unit" type="number" placeholder="Unit"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input rows.item="item" type="text" placeholder="Items/ Appliances"></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input rows.item="unit" type="number" placeholder="Unit"></ion-input>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+    <div>
+      <div>
+        <button (click)="showd()" ion-button icon-only>
+          Calculate
+        </button>
+      </div>
+    </div>
+    <li>Total Item/Appliances Which Uses Electricity In Your House Is:
+      <br>
+      <br>
+      <ion-item class="outline">
+        <ion-input  placeholder="{{showIt}}" value="{{showIt}}"></ion-input>
+      </ion-item>
+    </li>
+  </ol>
+  <br>
+  <br>
+  <p class="fontTomato">After checking and calculating the amount of item/ appliances which uses electricity in your house, what conclusion can
+    u made based on the number of item/appliances which uses electricity and the amount of electrical usage in your house?</p>
+
+  <ion-toolbar class="text-input">
+    <ion-item class="outline">
+
+      <ion-textarea autosize rows="4" placeholder="Your answer..." autocomplete="on" autocorrect="on" [(ngModel)]="message">
+      </ion-textarea>
+
+    </ion-item>
+  </ion-toolbar>
+  <ion-row>
+    <ion-col width-50 style="text-align: center;    border: thin solid white;">
+      <button ion-button [color]="red" [outline]="isOutline" [round]="true" (click)="ab()">
+        Submit </button>
+    </ion-col>
+  </ion-row>
+</ion-content>

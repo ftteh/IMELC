@@ -1,0 +1,165 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <!-- Check Vehicle -->
+      <!-- Check How Your Family Using Vehicle -->
+      Challenge 3
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-label color="Primary" class="my-label">CHECK THE USES OF VEHICLE</ion-label>
+  <p>
+    <ion-label color="danger">1. Check Out Your Family's Vehicle</ion-label>
+    <ion-row>
+      <ion-col col-3>
+        <ion-icon name="bus"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label color="primary" stacked>Big Car</ion-label>
+          <ion-input type="text" placeholder="No of Vehicle"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3>
+        <ion-icon name="car"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label color="primary" stacked>Car</ion-label>
+          <ion-input type="text" placeholder="No of Vehicle"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3>
+        <ion-icon name="bicycle"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label color="primary" stacked>Motorcycle</ion-label>
+          <ion-input type="text" placeholder="No of Vehicle"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3>
+        <ion-icon name="bicycle"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label color="primary" stacked>Bicycle</ion-label>
+          <ion-input type="text" placeholder="No of Vehicle"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </p>
+  <br>
+  <p>
+    <ion-label color="danger">2. Check Out How Your Family Moves Using Vehicle</ion-label>
+    <ion-label color="primary" stacked>
+      <ion-row>a. Choose one vehicle (Eg:Honda Accord 2.0)</ion-row>
+    </ion-label>
+    <ion-input type="text" placeholder="Enter here..."></ion-input>
+    <br>
+    <ion-label color="primary" stacked>
+      <ion-row>b. You can refer to challenge 3 guideline</ion-row>
+    </ion-label>
+    <ion-grid>
+      <ion-row>
+        <ion-col>Day</ion-col>
+        <ion-col>Starting Point</ion-col>
+        <ion-col>Ending Point</ion-col>
+        <ion-col>Distance Travel</ion-col>
+        <ion-col>Destination</ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="my-grid">
+      <ion-row>
+        <ion-col>
+          <ion-input type="text" placeholder="Enter here..."></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input type="text" placeholder="Enter here..."></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input type="text" placeholder="Enter here..."></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input type="text" placeholder="Enter here..."></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input type="text" placeholder="Enter here..."></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-label>Jumlah:</ion-label>
+        </ion-col>
+        <ion-col>
+          <ion-label>(A)
+            <u>answer</u>
+            <ion-input type="text" placeholder="Enter here..."></ion-input>
+          </ion-label>
+
+        </ion-col>
+        <ion-col>
+          <ion-label>KM</ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-label color="primary" stacked>
+      <ion-row>c. How much CO2 that has been release by your vehicle for one week?</ion-row>
+    </ion-label>
+    <ion-row>Jumlah Distance Travel(KM)</ion-row>
+    <ion-input type="text" placeholder="Total"></ion-input>
+    <ion-row>CO2 Consumtion per km(KgCO2/km)</ion-row>
+    <ion-input type="text" placeholder="CO2 consumed"></ion-input>
+    <ion-row>Total CO2 is (B)
+      <u>answer</u> kgCO2</ion-row>
+    <br>
+    <ion-label color="primary" stacked>
+      <ion-row>d. Suggestion to parents for reducing uses of CO2</ion-row>
+    </ion-label>
+    <ion-row>
+      <ion-input type="text" placeholder="comment..."></ion-input>
+    </ion-row>
+  </p>
+  <br>
+  <p>
+    <ion-label color="danger">3. Uses of Hybrid Vehicle</ion-label>
+    <ion-grid>
+      <ion-row>Jumlah Distance Travel(KM)</ion-row>
+      <ion-input type="text" placeholder="Total"></ion-input>
+      <ion-row>Total CO2 for hybrid vehicle is (C)
+        <u>answer</u> kgCO2</ion-row>
+      <br>
+      <ion-label color="primary" stacked>
+        <ion-row>a. The difference of CO2 release by hybrid vehicle and normal
+          <br>car is
+          <u>answer</u> kgCO2</ion-row>
+      </ion-label>
+      <ion-label color="primary" stacked>
+        <ion-row>b. Conclusion from this calculation</ion-row>
+      </ion-label>
+      <ion-row>
+        <ion-input type="text" placeholder="conclusion..."></ion-input>
+      </ion-row>
+    </ion-grid>
+  </p>
+  <ion-row>
+      <ion-col width-50 style="text-align: center;    border: thin solid white;">
+        <button ion-button [color]="red" [outline]="isOutline" [round]="true" (click)="ab()">
+          Submit </button>
+      </ion-col>
+    </ion-row>
+</ion-content>

@@ -1,0 +1,193 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title >
+      Challenge 4
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <p class="title">Recognizing the recycling symbol and eco-friendly labels</p>
+
+    Choose the correct recycling symbol and eco-friendly label according to its description. 
+    <br>
+    Then, include an example if you've ever seen the symbol/label on any products. 
+    If not, please state <b>"Not found"</b>.
+
+    
+        <!-- <img src="images/pet.png" alt="fsc logo" width="80" height="80">
+        <img src="images/ctl.png" alt="fsc logo" width="80" height="80">
+        <img src="images/recycle.png" alt="fsc logo" width="80" height="80">
+        <img src="images/recycle2.png" alt="fsc logo" width="80" height="80"> -->
+
+
+   
+
+    <br><br>
+
+    <ion-grid>
+      <ion-row>
+          <ion-col class="header">Description</ion-col>
+          <ion-col class="header">Symbol/Labels</ion-col>
+          <ion-col class="header">Example</ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col >A label for product that is responsible for forest resources</ion-col>
+          <ion-col>
+              <ion-item>
+                <ion-label></ion-label>
+                <ion-select [(ngModel)]="selection1">
+                    <ion-option value="A">A</ion-option>
+                    <ion-option value="B">B</ion-option>
+                    <ion-option value="C">C</ion-option>
+                    <ion-option value="D">D</ion-option>
+                    <ion-option value="E">E</ion-option>
+                  </ion-select>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-input type="text" value=""></ion-input>
+              </ion-item>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>A symbol known as "green dot system" for recycled products from European countries</ion-col>
+          <ion-col>
+              <ion-item>
+                <ion-label></ion-label>
+                <ion-select [(ngModel)]="selection2">
+                    <ion-option value="A">A</ion-option>
+                    <ion-option value="B">B</ion-option>
+                    <ion-option value="C">C</ion-option>
+                    <ion-option value="D">D</ion-option>
+                    <ion-option value="E">E</ion-option>
+                </ion-select>
+              </ion-item>              
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-input type="text" value=""></ion-input>
+              </ion-item>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>A symbol for products that can be recycled</ion-col>
+          <ion-col>
+              <ion-item>
+                <ion-label></ion-label>
+                <ion-select [(ngModel)]="selection3">
+                  <ion-option value="A">A</ion-option>
+                  <ion-option value="B">B</ion-option>
+                  <ion-option value="C">C</ion-option>
+                  <ion-option value="D">D</ion-option>
+                  <ion-option value="E">E</ion-option>
+              </ion-select>
+              </ion-item>            
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-input type="text" value=""></ion-input>
+              </ion-item>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>A symbol for transparent or clear plastic bottles</ion-col>
+          <ion-col>
+              <ion-item>
+                <ion-label></ion-label>
+                <ion-select [(ngModel)]="selection4">
+                    <ion-option value="A">A</ion-option>
+                    <ion-option value="B">B</ion-option>
+                    <ion-option value="C">C</ion-option>
+                    <ion-option value="D">D</ion-option>
+                    <ion-option value="E">E</ion-option>
+                </ion-select>
+              </ion-item>              
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-input type="text" value=""></ion-input>
+              </ion-item>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>A label for electrical appliances that are energy efficient</ion-col>
+          <ion-col>
+              <ion-item>
+                <ion-label></ion-label>
+                <ion-select [(ngModel)]="selection5">
+                    <ion-option value="A">A</ion-option>
+                    <ion-option value="B">B</ion-option>
+                    <ion-option value="C">C</ion-option>
+                    <ion-option value="D">D</ion-option>
+                    <ion-option value="E">E</ion-option>
+                  </ion-select>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-input type="text" value=""></ion-input>
+              </ion-item>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <br>
+
+    <p class="title">Creative thinking skills</p>
+    What is the relationship between the use of products that has eco-friendly labels with 
+    reduction of carbon dioxide emissions?    
+    
+    
+    <ion-list>
+        <ion-item>
+            <ion-textarea placeholder="Answer here" class="textbox"></ion-textarea>
+        </ion-item>     
+    </ion-list>
+    <ion-row>
+            <ion-col width-50 style="text-align: center;    border: thin solid white;">
+              <button ion-button [color]="red" [outline]="isOutline" [round]="true" (click)="ab()">
+                Submit </button>
+            </ion-col>
+          </ion-row>
+</ion-content>
+
+<!-- CHALLENGE 5
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Challenge 5
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <b class="header">How can your school be able to use renewable energy?</b>
+  <br/><br/>
+  You have been asked to design your school using renewable energy. 
+  Using your own ideas and creativity, draw your school using the renewable energy on a piece of paper. 
+  Then, capture and upload it in the box below. 
+  <br>
+  <b style="font-size: 12px">(You can include short and simple words to describe your design)</b>
+  
+  <br><br>
+  <ion-input type="file" class="uploadbox"></ion-input>
+  <br><br>
+
+  Besides renewable energy, provide another way on how you could save energy consumption in school?
+  <br><br>
+  <ion-input type="file" class="uploadbox"></ion-input>
+  <br><br>
+
+  <b class="header">What is low carbon lifestyle?</b>
+  <br><br>
+  What do you understand about Low Carbon Society?
+  <ion-textarea placeholder="Answer here" class="textbox"></ion-textarea>
+  <br>
+  Now you have knew that Low Carbon Society(LCS) is important in saving the Earth, you want that concept to be implemented in your family. So how would you do it?
+  <ion-textarea placeholder="Answer here" class="textbox"></ion-textarea>
+  <br><br>
+</ion-content>
+-->

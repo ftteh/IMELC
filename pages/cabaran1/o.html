@@ -1,0 +1,142 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      CABARAN 1: Semak barang elektrik di rumah
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+<style>
+  .col {
+    border: thin solid black;
+    text-align: center;
+  }
+
+  .outline {
+    border: thin solid black;
+  }
+
+  ion-footer {
+    ion-toolbar.toolbar.toolbar-ios {
+      &.toolbar:last-child {
+        padding-bottom: 0px;
+        height: auto;
+      }
+    }
+    ion-item.item-textarea {
+      background-color: transparent;
+    }
+    .text-input {
+      height: auto;
+      div.input-wrapper {
+        background-color: #fff;
+        border-radius: 20px;
+        textarea.text-input {
+          margin-left: 8px;
+
+        }
+      }
+    }
+  }
+</style>
+
+<ion-content padding text-center>
+  <b>Mari semak barang apa di rumah yang menggunakan elektrik</b>
+
+  <ol type="1" text-center>
+    <li>Mari senaraikan alat elektrik di rumah anda. Kira dan tuliskan bilangan unit alat elektrik tersebut.</li>
+
+
+    <ion-grid class="items" fixed>
+
+      <ion-row>
+        <ion-col>
+          <b>Alat Elektrik</b>
+        </ion-col>
+        <ion-col>
+          <b>Bilangan unit</b>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input rows.item="alat elektrik" type="text" placeholder="Alat Elektrik"></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input rows.item="bilangan unit" type="number" placeholder="Bilangan Unit"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input rows.item="alat elektrik" type="text" placeholder="Alat Elektrik"></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input rows.item="bilangan unit" type="number" placeholder="Bilangan Unit"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input rows.item="alat elektrik" type="text" placeholder="Alat Elektrik"></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input rows.item="bilangan unit" type="number" placeholder="Bilangan Unit"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input rows.item="alat elektrik" type="text" placeholder="Alat Elektrik"></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input rows.item="bilangan unit" type="number" placeholder="Bilangan Unit"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input rows.item="alat elektrik" type="text" placeholder="Alat Elektrik"></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input rows.item="bilangan unit" type="number" placeholder="Bilangan Unit"></ion-input>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+    <div>
+      <div>
+        <button (click)="showd()" ion-button icon-only>
+          Kira
+        </button>
+      </div>
+    </div>
+
+
+    <li>Jumlah alat yang menggunakan elektrik di rumah anda ialah:
+      <ion-item class="outline">
+        <ion-input  placeholder="{{showIt}}" value="{{showIt}}"></ion-input>
+      </ion-item>
+    </li>
+  </ol>
+  <br>
+  <br>
+  <b>Setelah semak dan kira jumlah alatan elektrik di rumah anda, apakah kesimpulan yang boleh anda buat tentang peralatan elektrik
+    dan penggunaan elektrik di rumah anda?</b>
+
+  <ion-toolbar class="text-input">
+    <ion-item class="outline">
+
+      <ion-textarea autosize rows="4" placeholder="Jawapan anda..." autocomplete="on" autocorrect="on" [(ngModel)]="message">
+      </ion-textarea>
+
+    </ion-item>
+  </ion-toolbar>
+  <ion-row>
+      <ion-col width-50 style="text-align: center;    border: thin solid white;">
+        <button ion-button [color]="red" [outline]="isOutline" [round]="true" (click)="ab()">
+          Submit </button>
+      </ion-col>
+    </ion-row>
+</ion-content>
